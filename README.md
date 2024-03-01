@@ -1,19 +1,16 @@
 # calculatorRedo
+Neo See
+2/29/2024
+Calculator
 
 
+Use our lecture to recreate our completed calculator.
 
+Add your own styles.
 
+Add frequent comments explaining each portion of your code and how it relates to the architecture of the program.
 
-
-
-
-
-
-
-
-
-
-
+Must include a new function: a backspace button!
 
 
 
