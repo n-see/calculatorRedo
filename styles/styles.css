@@ -2,8 +2,10 @@
 
 body{
     background: url("../assets/desk.avif");
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow-x: hidden;
 }
 .color{
     color: blue;

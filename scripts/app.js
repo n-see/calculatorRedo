@@ -22,6 +22,8 @@
 //This application should LOOK like a calculator layout this means a display on top and a square grid of keys down below
 //Pressing 'Enter' on your keyboard should fire off the equals button
 
+//linking all the buttons to the html and creating variable
+
 
 let btn0 = document.getElementById("btn0");
 let btn1 = document.getElementById("btn1");
@@ -94,6 +96,8 @@ updateDisplay();
 
 }
 
+//updates the display area to show the values
+
 function updateDisplay(){
     if(operatorSaved == ""){
         displayArea.innerText = stringNumber;
@@ -103,6 +107,7 @@ function updateDisplay(){
     }
 }
 
+// This function preforms math based on the clicked operator
 
 function doMath(){
     num2 = Number(stringNumber);
@@ -149,7 +154,6 @@ function backspace(){
 }
 //this function changes the number to negative or vice versa
 
-
 function flip(){
     let num3 = 0;
     let numNeg = 0;
@@ -175,7 +179,14 @@ btnDivide.addEventListener("click", function(){
 });
 btnEquals.addEventListener("click", function(){
     doMath();
+
+    // found that after equaling pressing a new number will add the the string number 12 - 12 = 0 then pressing 3 would become 12 - 123
+
     displayArea.innerText = result;
+    stringNumber = "";
+    operatorSaved = "";
+    num1 = 0;
+    num2 = 0;
 });
 
 //Number Events
